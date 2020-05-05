@@ -9,12 +9,17 @@ body {
     font-family: 'Muli', sans-serif;
     color: rgb(255, 255, 255);
     font-size: 18px;
+    overflow-x: hidden;
 }
 
 h1 {
     font-size: 2.5em;
 }
 
+.bg-black {
+    background-color: #000011;
+    width: 100vw;
+}
 /* conteúdo */
 
 #home, #group, #integrantes {
@@ -24,10 +29,10 @@ h1 {
 }
 
 #home {
-    background: #4ABDAC url(img/background.png) no-repeat center center;
+    background: #4ABDAC url(img/background.png) no-repeat center center fixed;
     width: 100vw;
     height: 100vh;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 0 100px;
     text-shadow: 0 2px 2px #000000cb;
     font-size: 1.5em;
@@ -36,54 +41,78 @@ h1 {
     justify-content: center;
 }
 
+#home .welcome {
+    margin-top: 200px;
+}
+
 #home h1{
     font-size: 4em;
     font-weight: bold;
 }
 
 #group {
+    background-color: #000011;
     width: 100vw;
     height: 100vh;
-    color: #000000cb;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
+}
+
+.descricao {
+    margin: 0px 10px 80px 10px;
+}
+
+#logo-roxo {
+    border-radius: 15px;
+    position: relative;
+    top: -80px;
+    box-shadow: 0 2px 6px #000000cb;
+}
+
+#print {
+    border-radius: 2px;
+    box-shadow: 0 2px 6px #ffffff;
 }
 
 #integrantes {
-    background:  url(img/background.png) no-repeat center center;
-    width: 100%;
+    background:  url(img/background.png) no-repeat center center fixed;
+    width: 100vw;
     height: 100%;
 }
 
 #integrantes input + .trigger-wrapper .perfil-integrante {
-    display: none;
-}
-
-#integrantes input:checked + .trigger-wrapper .perfil-integrante {
     display: block;
 }
 
+
 .wrapper {
-    background-color: rgba(228, 241, 239, 0.707);
     color: #000000cb;
     border-radius: 15px;
-    max-width: 75%;
+    max-width: 80%;
     margin: 20px auto;
     padding: 25px;
 }
 
 .wrapper h1 {
+    color: #ffffffec;
     padding-bottom: 30px;
     text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 4em;
+}
+
+.perfis {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .integrantes {
     background: #ffffffec;
     border-radius: 6px;
-    margin-bottom: 20px;
+    margin: 20px auto;
     padding: 15px;
     box-shadow: 0 2px 6px rgba(24, 41, 72, 0.564);
 }
@@ -92,7 +121,7 @@ h1 {
     color: #FC4A1A;
     font-weight: bolder;
     cursor: pointer;
-    padding-left: 100px;
+    padding-left: 10px;
 }
 
 .trigger-wrapper label {
@@ -102,12 +131,12 @@ h1 {
 }
 
 .trigger-wrapper label img {
-    margin: 0 70px 0 50px;
+    margin: 0 35px 0 25px;
 }
 
 .perfil-integrante,
 .info-integrante {
-    margin: 10px 60px;
+    margin: 10px 30px;
 }
 
 .trigger-input {

@@ -22,9 +22,9 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="Logo grupo" width="120" height="70">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <a class="navbar-brand ml-5" href="#">
+                <img id="logo-branco" src="img/logo.png" alt="Logo grupo" width="120" height="70">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
               <span class="navbar-toggler-icon"></span>
@@ -32,8 +32,8 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(Página atual)</span></a>
-                <a class="nav-item nav-link" href="#">Nosso grupo</a>
-                <a class="nav-item nav-link" href="#group">Integrantes</a>
+                <a class="nav-item nav-link" href="#group">Nosso grupo</a>
+                <a class="nav-item nav-link" href="#integrantes">Integrantes</a>
                 <a class="nav-item nav-link" href="#">Resultados</a>
               </div>
             </div>
@@ -44,32 +44,44 @@
     <main>
         <article>
             <section id="home">
-                <h1>Bem vindo!</h1>
+                <div class="welcome">
+                    <h1>Bem vindo!</h1>
 
-                <p>
-                    Essa é a apresentação do grupo 1. Aqui você encontrará todas as informações sobre nós,
-                    como vai o andamento do nosso projeto etc e tal..
-                </p>
+                    <p>
+                        16 pessoas confinadas em suas casas, 1 grupo e uma experiência intensa: Somos a equipe Big Gama Brasil, e estamos no Gama Experience #33!
+                    </p>
+                </div>
             </section>
 
             <section id="group">
-                <div class="">
-                    <img src="img/Big.png" width="500" height="300" alt="">
-                    <img src="img/grupo.png" width="700" height="450" alt="Big Gama Brasil">
-                    <p>Descrição do grupo</p>
+                <div>
+                    <img id="logo-roxo" src="img/Big.png" width="400" height="260" alt="Logo da equipe">
+                </div>
+                <div class="row descricao">
+                    <div class="col-6">
+                        <img id="print" src="img/grupo.png" width="700" height="450" alt="Big Gama Brasil">
+                    </div>
+                    <div class="col-6 align-self-center">
+                        <p>
+                            Pessoas de diversas partes do Brasil e do mundo, confinadas em suas casas, mas querendo tirar o máximo proveito
+                            das 5 semanas intensas do Gama Experience, Edição #33!
+                            Com o corpo "preso" dentro de casa, mas a mente voando a milhares de quilômetros por hora,
+                            eles vão passar por diversos desafios, para no fim TODOS GANHAREM! 
+                        </p>
+                    </div>
                 </div>
 
             </section>
 
             <section id="integrantes">
                 <div class="wrapper">
-                    <h1>Essa é a nossa equipe</h1>
+                    <h1>Esses são nossos Gamars</h1>
                     <div class="perfis">
                         <div class="integrantes">
                             <input type="checkbox" id="integrante-1" class="trigger-input">
                             <div class="trigger-wrapper">
                                 <label for="integrante-1">
-                                    <img src="img/exemplo_perfil.jpg" width="150" height="150" alt="">
+                                    <img src="img/exemplo_perfil.png" width="150" height="150" alt="">
                                     <h2 class="integrante-titulo">Nome Integrante</h2>
                                 </label>
                                 <div class="perfil-integrante">
@@ -85,7 +97,7 @@
                             <input type="checkbox" id="integrante-2" class="trigger-input">
                             <div class="trigger-wrapper">
                                 <label for="integrante-2">
-                                    <img src="img/exemplo_perfil.jpg" width="150" height="150" alt="">
+                                    <img src="img/exemplo_perfil.png" width="150" height="150" alt="">
                                     <h2 class="integrante-titulo">Nome Integrante</h2>
                                 </label>
                                 <div class="perfil-integrante">
@@ -101,7 +113,7 @@
                             <input type="checkbox" id="integrante-3" class="trigger-input">
                             <div class="trigger-wrapper">
                                 <label for="integrante-3">
-                                    <img src="img/exemplo_perfil.jpg" width="150" height="150" alt="">
+                                    <img src="img/exemplo_perfil.png" width="150" height="150" alt="">
                                     <h2 class="integrante-titulo">Nome Integrante</h2>
                                 </label>
                                 <div class="perfil-integrante">
@@ -117,7 +129,7 @@
                             <input type="checkbox" id="integrante-4" class="trigger-input">
                             <div class="trigger-wrapper">
                                 <label for="integrante-4">
-                                    <img src="img/exemplo_perfil.jpg" width="150" height="150" alt="">
+                                    <img src="img/exemplo_perfil.png" width="150" height="150" alt="">
                                     <h2 class="integrante-titulo">Nome Integrante</h2>
                                 </label>
                                 <div class="perfil-integrante">
